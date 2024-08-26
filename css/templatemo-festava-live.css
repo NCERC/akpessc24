@@ -1,25 +1,19 @@
-/*
 
-TemplateMo 583 Festava Live
-
-https://templatemo.com/tm-583-festava-live
-
-*/
 
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
   --white-color: #ffffff;
-  --primary-color: #f8cb2e;
-  --secondary-color: #dba646;
-  --section-bg-color: #f0f8ff;
-  --custom-btn-bg-color: #8d611f;
-  --custom-btn-bg-hover-color: #f87902;
-  --dark-color: #000000;
-  --p-color: #717275;
+  --primary-color: #dda745;
+  --secondary-color: #1412114f;
+  --section-bg-color: #412f2f79;
+  --custom-btn-bg-color: #a67735;
+  --custom-btn-bg-hover-color: #cc6b10;
+  --dark-color: #0000005d;
+  --p-color: #ffffff00;
   --border-color: #7fffd4;
-  --link-hover-color: #b22727;
+  --link-hover-color: #cc6b10;
 
   --body-font-family: "Outfit", sans-serif;
 
@@ -43,7 +37,7 @@ https://templatemo.com/tm-583-festava-live
 }
 
 body {
-  background-color: var(--white-color);
+  background-color: #d6ba2b;
   font-family: var(--body-font-family);
 }
 ,
@@ -154,11 +148,16 @@ body {
 
 h2,
 h3,
-h4,
 h5,
 h6 {
   color: var(--dark-color);
 }
+
+
+h4, {
+  color: #00000098 ;
+}
+
 
 h1,
 h2,
@@ -316,7 +315,7 @@ strong {
 }
 
 .section-bg {
-  background-color: var(--section-bg-color);
+  background-color: #d6b92b00;
 }
 
 .section-overlay {
@@ -335,7 +334,7 @@ strong {
 }
 
 .tab-content {
-  background-color: var(--white-color);
+  background-color: #6b6b6bc5;
   border-radius: var(--border-radius-medium);
   padding: 45px;
 }
@@ -362,7 +361,7 @@ strong {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
-  background: var(--white-color);
+  background: #f4a01038;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   color: var(--primary-color);
 }
@@ -382,7 +381,7 @@ strong {
   CUSTOM ICON COLOR               
 -----------------------------------------*/
 .custom-icon {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 /*---------------------------------------
@@ -426,18 +425,28 @@ strong {
 /*---------------------------------------
   VIDEO              
 -----------------------------------------*/
+
+/* Container to ensure the video covers the full screen */
 .video-wrap {
-  z-index: -100;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -100; 
 }
 
+/* Style for the video itself */
 .custom-video {
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: cover;
   width: 100%;
   height: 100%;
+  object-fit: cover; 
 }
+
 
 /*---------------------------------------
   SITE HEADER              
@@ -493,7 +502,7 @@ strong {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-  color: var(--secondary-color);
+  color: #dda745;
 }
 
 .navbar-toggler {
@@ -600,14 +609,14 @@ strong {
 -----------------------------------------*/
 .about-section {
   background-image: url("../images/");
-  background-color: #000000f5;
+  background-color: #00000079;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 .about-section2 {
   background-image: url("../images/");
-  background-color: #000000f5;
+  background-color: #00000079;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -615,7 +624,7 @@ strong {
 
 .about-section21 {
   background-image: url("../images/");
-  background-color: #000000f5;
+  background-color: #00000079;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -711,7 +720,7 @@ strong {
 
 .artists-hover {
   background-color: #dba74667;
-  background-color: #8d611f69);
+  background-color: #ab7b2f69);
   border-radius: var(--border-radius-medium);
   backdrop-filter: blur(5px) saturate(180%);
   -webkit-backdrop-filter: blur(5px) saturate(180%);
@@ -750,13 +759,13 @@ strong {
 -----------------------------------------*/
 .schedule-section {
   /* background-image: url("../images/nainoa-shizuru-unsplash-blur.jpg"); */
-  background-color: #050402;
+  background-color: #000000798;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .table-responsive {
-  filter: drop-shadow(2px 2px 4px #606060);
+  filter: drop-shadow(2px 2px 4px #00000000);
 }
 
 .schedule-table {
@@ -829,7 +838,7 @@ strong {
   PRICING              
 -----------------------------------------*/
 .pricing-thumb {
-  border: 5px dotted var(--dark-color);
+  border: 5px dotted #e8e8e8;
   border-radius: var(--border-radius-medium);
   position: relative;
   padding: 50px;
@@ -837,7 +846,7 @@ strong {
 
 .pricing-thumb h3 small {
   display: inline-block;
-  font-size: var(--p-font-size);
+  font-size: var #e8e8e8;
   margin-right: 15px;
 }
 
@@ -845,7 +854,7 @@ strong {
   column-count: 2;
   padding-left: 20px;
 }
-
+-
 .pricing-list-item {
   line-height: normal;
   margin-right: 10px;
@@ -853,10 +862,10 @@ strong {
 }
 
 .pricing-tag {
-  background-color: var(--secondary-color);
+  background-color: #da830a;
   border-radius: var(--border-radius-large);
-  color: var(--white-color);
-  font-weight: var(--font-weight-bold);
+  color: var #e8e8e8;
+  font-weight: var #cebea7;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -870,6 +879,7 @@ strong {
   margin: 20px;
 }
 
+
 .pricing-tag span {
   font-size: 180%;
   line-height: normal;
@@ -880,7 +890,7 @@ strong {
 }
 
 .pricing-thumb .link-fx-1:hover {
-  color: var(--link-hover-color);
+  color: #f5953c;
 }
 
 /*---------------------------------------
@@ -894,7 +904,7 @@ strong {
   CUSTOM FORM               
 -----------------------------------------*/
 .custom-form .form-control {
-  color: var(--p-color);
+  color: #dda745;
   margin-bottom: 24px;
   padding-top: 13px;
   padding-bottom: 13px;
@@ -902,10 +912,10 @@ strong {
 }
 
 .custom-form button[type="submit"] {
-  background: var(--custom-btn-bg-color);
+  background: #aeada62a;
   border: none;
   border-radius: var(--border-radius-large);
-  color: var(--white-color);
+  color: grey;
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-medium);
   transition: all 0.3s;
@@ -922,22 +932,22 @@ strong {
   SITE FOOTER              
 -----------------------------------------*/
 .site-footer {
-  background-color: var(--dark-color);
+  background-color: #000000;
   position: relative;
   overflow: hidden;
   padding-bottom: 30px;
 }
 
 .site-footer-top {
-  background-color: #8d611f;
+  background-color: #a67735;
   background-image: url("../images/nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg");
   background-repeat: no-repeat;
-  margin-bottom: 70px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 10px;
+  /* padding-top: 30px;
+  padding-bottom: 30px; */
 }
 .site-footer-top1 {
-  background-color: #000000;
+  background-color: #815323;
   background-image: url("../images/nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg");
   background-repeat: no-repeat;
   margin-bottom: 70px;
@@ -960,7 +970,7 @@ strong {
 
 .site-footer-link,
 .copyright-text {
-  color: var(--white-color);
+  color: #ffff;
 }
 
 .site-footer-links {
@@ -992,7 +1002,7 @@ strong {
 }
 
 .social-icon-link {
-  background: var(--secondary-color);
+  background: #dda745;
   border-radius: var(--border-radius-large);
   color: var(--white-color);
   font-size: var(--copyright-font-size);
@@ -1189,4 +1199,145 @@ strong {
 .about-image {
   width: 100%;
   height: auto;
+}
+
+
+
+/* Footer Sponsor logos */
+
+
+.sponsor-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 20pxro */
+}
+
+.sponsor-logo {
+  flex: 1 1 20%; 
+  max-width: 150px;
+  margin: 10px;
+}
+
+.sponsor-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 480px) {
+  .sponsor-container {
+      justify-content: space-between;
+      gap: 10px;
+  }
+  .sponsor-logo {
+      flex: 1 1 20%;
+      max-width: 70px; 
+  }
+}
+
+
+
+/* AKPESC TWO LOGOS */
+.header-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo {
+  width: 80px; 
+}
+
+@media (max-width: 768px) {
+  .header-logo {
+      width: 50px; 
+  }
+}
+
+
+/* Nav bar logo */
+
+.navbar-logo {
+  max-width: 100px; 
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar-logo {
+      max-width: 80px; 
+  }
+}
+
+/* Pre Loader */
+#preloader {
+  background: #000 url(/preldr/logotrans.gif) no-repeat center center;
+  background-size: contain;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+
+/* Home Screen Center logo */
+
+.akpessc-logo {
+  width: 300px;
+  height: auto;
+}
+
+/* small Devices (small phones, 375px and up) */
+@media (min-width: 360px) {
+  .akpessc-logo {
+      width: 310px;
+  }
+}
+
+/* Medium Devices (Tablets, 768px and up) */
+@media (min-width: 768px) {
+  .akpessc-logo {
+      width: 450px;
+  }
+}
+
+/* Large Devices (Desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .akpessc-logo {
+      width: 500px;
+  }
+}
+
+/* Large Ass Devices (Desktops, 1366px and up) */
+@media (min-width: 1366px) {
+  .akpessc-logo {
+      width: 550px;
+  }
+}
+
+
+/* Ticketing Ticket image */
+.responsive-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Price lable */
+.price-label {
+    background: rgba(255, 215, 0, 0.2); /* Transparent gold background */
+    color: #FFD700; /* Gold text color */
+    padding: 7px 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Glassy effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
 }
